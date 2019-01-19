@@ -421,6 +421,7 @@ public class MainActivity extends Activity {
         expandedContainer.setVisibility(View.VISIBLE);
 		expandedText.setVisibility(View.VISIBLE);
 		mask.setBackgroundColor(0x50000000);
+		mask.setVisibility(View.VISIBLE);
 		blurView(blur);
 		
 		// Set the pivot point for SCALE_X and SCALE_Y transformations to the
@@ -500,6 +501,7 @@ public class MainActivity extends Activity {
 								thumbView.setAlpha(1f);
 								mask.setBackgroundColor(Color.TRANSPARENT);
 								expandedContainer.setVisibility(View.GONE);
+								mask.setVisibility(View.GONE);
 								unblurView(blur);
 								mCurrentAnimator = null;
 							}
@@ -509,6 +511,7 @@ public class MainActivity extends Activity {
 								thumbView.setAlpha(1f);
 								mask.setBackgroundColor(Color.TRANSPARENT);
 								expandedContainer.setVisibility(View.GONE);
+								mask.setVisibility(View.GONE);
 								unblurView(blur);
 								mCurrentAnimator = null;
 							}
@@ -582,6 +585,7 @@ public class MainActivity extends Activity {
 					thumbView.setAlpha(1f);
 					mask.setBackgroundColor(Color.TRANSPARENT);
 					expandedContainer.setVisibility(View.GONE);
+					mask.setVisibility(View.GONE);
 					unblurView(blur);
 					
 					mCurrentAnimator = null;
@@ -592,6 +596,7 @@ public class MainActivity extends Activity {
 					thumbView.setAlpha(1f);
 				    mask.setBackgroundColor(Color.TRANSPARENT);
 					expandedContainer.setVisibility(View.GONE);
+					mask.setVisibility(View.GONE);
 					unblurView(blur);
 					mCurrentAnimator = null;
 				}
